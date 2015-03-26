@@ -1,0 +1,32 @@
+language: c
+
+env:
+  global:
+    - R_BUILD_ARGS="--no-build-vignettes --no-manual"
+    - R_CHECK_ARGS="--no-build-vignettes --no-manual --as-cran"
+    - _R_CHECK_FORCE_SUGGESTS_=FALSE
+    - NOT_CRAN="true"
+    - WARNINGS_ARE_ERRORS=1
+
+before_install:
+  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
+  - chmod 755 ./travis-tool.sh
+  - ./travis-tool.sh bootstrap
+
+install:
+  - ./travis-tool.sh install_deps
+
+script: ./travis-tool.sh run_tests
+
+after_success:
+  -  Rscript -e 'library(covr);coveralls()'
+  - ./travis-tool.sh dump_logs
+
+after_failure:
+  -  Rscript -e 'library(covr);coveralls()'
+  - ./travis-tool.sh dump_logs
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

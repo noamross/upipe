@@ -1,0 +1,11 @@
+Package: upipe
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1
+Date: 2015-03-24
+Author: Noam Ross
+Maintainer: Noam Ross <noam.ross@gmail.com>
+Description: More about what it does (maybe more than one line)
+License: MIT
+Imports: magrittr
+LazyData: TRUE
