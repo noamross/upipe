@@ -27,11 +27,12 @@
 #' @param arguments to specific methods.
 #'
 #' @export
-upipe = function(input, command, show_stderr = interactive(), ...) UseMethod("upipe")
+upipe <- function(input, command, show_stderr = interactive(), ...) {
+  UseMethod("upipe")
+}
 
 #' @importFrom magrittr %>%
 #' @name %>%
 #' @export
 #' @rdname upipe
 NULL
-

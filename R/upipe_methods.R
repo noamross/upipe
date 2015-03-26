@@ -1,5 +1,5 @@
 #' @export
-upipe.data.frame <- function (input, command, show_stderr = interactive(), ...) {
+upipe.data.frame <- function(input, command, show_stderr = interactive(), ...) {
 
   if (!is.logical(show_stderr) || is.na(show_stderr))
     stop("'show_stderr' must be TRUE or FALSE")
@@ -25,8 +25,8 @@ upipe.data.frame <- function (input, command, show_stderr = interactive(), ...) 
 
   command <- paste("(", command, ") <", shQuote(fifo_in_name))
 
-  system(command = command, intern = TRUE, ignore.stderr = !show_stderr, wait = TRUE,
-        input = NULL)  #or should we use pipe()?
+  system(command = command, intern = TRUE, ignore.stderr = !show_stderr,
+         wait = TRUE, input = NULL)  #or should we use pipe()?
 }
 
 #' @export
@@ -57,7 +57,6 @@ upipe.default <- function (input, command, show_stderr = interactive(), ...) {
 
   command <- paste("(", command, ") <", shQuote(fifo_in_name))
 
-  system(command = command, intern = TRUE, ignore.stderr = !show_stderr, wait = TRUE,
-        input = NULL)  #or should we use pipe()?
+  system(command = command, intern = TRUE, ignore.stderr = !show_stderr,
+         wait = TRUE, input = NULL)  #or should we use pipe()?
 }
-
