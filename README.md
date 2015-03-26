@@ -17,5 +17,18 @@ install_github('noamross/upipe')
 
 ```
 library(upipe)
+upipe(list.files(), 'grep R')
 list.files() %>% upipe('grep R')
 ```
+
+upipe has methods for specific object types. By default, it converts inputs
+to chracter.  It converts data.frames to CSV.
+
+```
+mtcars %>% upipe('grep Toyota')
+1:30 %>% upipe('grep 3')
+```
+
+`
+
+Suggestions and contributions for other methods [are welcome](https://github.com/noamross/upipe/issues/1).

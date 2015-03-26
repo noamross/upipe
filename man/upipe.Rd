@@ -5,7 +5,7 @@
 \alias{upipe}
 \title{Pipe through system shell}
 \usage{
-upipe(input, command, show_stderr = interactive())
+upipe(input, command, show_stderr = interactive(), ...)
 
 input \%>\% upipe(command)
 }
@@ -16,10 +16,17 @@ by newlines.}
 \item{command}{a system command to take \code{input} as stdin}
 
 \item{show_stderr}{print stderr of the command to the console as a message?}
+
+\item{arguments}{to specific methods.}
 }
 \description{
 \code{upipe} is a modification to \code{\link[base]{system}} designed for
 piping data out of R, into the shell, and returning back to an R analysis pipeline
-Take in a text object, run it through a unix command, return it
+}
+\details{
+\code{upipe}'s default method coerces \code{input} to character before sending
+it to the system command.  Other methods are specific to the data object.
+Currently the only implemented method is \code{upipe.data.frame}, which converts
+data frames to CSV format before piping them.
 }
 
