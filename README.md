@@ -36,5 +36,3 @@ Suggestions and contributions for other methods [are welcome](https://github.com
 ## Thanks
 
 - [Vince Buffalo](https://github.com/vsbuffalo) for the concept and name
-`
-
