@@ -4,7 +4,8 @@
 # Merging *NIX and magrittr pipelines
 
 `upipe()` is a modification of R's `system()` command designed for integration
-into magrittr / dplyr pipelines.
+into magrittr / dplyr pipelines. 
+
 
 ## Install
 
@@ -29,6 +30,11 @@ mtcars %>% upipe('grep Toyota')
 1:30 %>% upipe('grep 3')
 ```
 
+Suggestions and contributions for other methods [are welcome](https://github.com/noamross/upipe/issues/1).
+
+
+## Thanks
+
+- [Vince Buffalo](https://github.com/vsbuffalo) for the concept and name
 `
 
-Suggestions and contributions for other methods [are welcome](https://github.com/noamross/upipe/issues/1).

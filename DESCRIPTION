@@ -1,9 +1,10 @@
 Package: upipe
 Type: Package
-Title: What the Package Does (Title Case)
+Title: An enhanced system() designed for piping
 Version: 0.1
 Date: 2015-03-24
-Author: Noam Ross
+Authors@R: c(person("Noam", "Ross", email = "noam.ross@gmail.com",
+  role = c("aut", "cre")), person("Vince", "Buffalo", role = c("aut", "cre")))
 Maintainer: Noam Ross <noam.ross@gmail.com>
 Description: More about what it does (maybe more than one line)
 License: MIT
