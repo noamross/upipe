@@ -3,6 +3,8 @@
 [![Coverage Status](https://coveralls.io/repos/noamross/upipe/badge.svg)](https://coveralls.io/r/noamross/upipe)
 # Merging *NIX and magrittr pipelines
 
+[![Join the chat at https://gitter.im/noamross/upipe](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/noamross/upipe?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 `upipe()` is a modification of R's `system()` command designed for integration
 into magrittr / dplyr pipelines. 
 
