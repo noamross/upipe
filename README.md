@@ -12,7 +12,7 @@ into magrittr / dplyr pipelines.
 ## Install
 
 ```
-install.packages(devtools)
+install.packages('devtools')
 install_github('noamross/upipe')
 ```
 

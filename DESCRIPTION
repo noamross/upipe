@@ -4,9 +4,9 @@ Title: An enhanced system() designed for piping
 Version: 0.1
 Date: 2015-03-24
 Authors@R: c(person("Noam", "Ross", email = "noam.ross@gmail.com",
-  role = c("aut", "cre")), person("Vince", "Buffalo", role = c("aut", "cre")))
+  role = c("aut", "cre")), person("Vince", "Buffalo", role = c("aut")))
 Maintainer: Noam Ross <noam.ross@gmail.com>
-Description: More about what it does (maybe more than one line)
+Description: A magrittr-friendly system piping thing
 License: MIT
 Imports: magrittr
 LazyData: TRUE
